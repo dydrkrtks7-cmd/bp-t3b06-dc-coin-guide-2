@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등촌 코인노래방 가이드 – 블로그</title>
+    <meta name="description" content="등촌 코인노래방 찐블로그! 가성비 최고 노래방부터 숨은 단골집까지, 내돈내산 리얼 후기로 엄선한 등촌 코인노래방 가이드. 가격, 시설, 팁 총정리.">
+    <meta name="keywords" content="등촌 코인노래방, 등촌 노래방, 코인노래방 가이드, 등촌 가성비 노래방, 등촌 단골 노래방, 코인노래방 추천">
+    <meta name="author" content="등촌코인가이드">
+    <link rel="canonical" href="https://t3b06-dc-coin-guide-2.vercel.app/">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <!-- OG Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="등촌 코인노래방 가이드 – 찐블로그">
+    <meta property="og:description" content="등촌 코인노래방 완전정복! 내돈내산 리얼 후기로 엄선한 가이드. 가격, 시설, 팁 총정리.">
+    <meta property="og:url" content="https://t3b06-dc-coin-guide-2.vercel.app/">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            background: #1a1a1a;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f0e8;
+            color: #1a1a1a;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 4px solid #1a1a1a;
+            min-height: 100vh;
+        }
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 0.75rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            border-left: 12px solid #f7d418;
+            padding-left: 20px;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 6px double #1a1a1a;
+            padding-bottom: 5px;
+            margin-top: 2rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+        }
+        p, li, a {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        a {
+            color: #1a1a1a;
+            text-decoration: underline wavy #f7d418 2px;
+            text-underline-offset: 4px;
+            font-weight: 700;
+        }
+        a:hover {
+            background: #f7d418;
+            text-decoration: none;
+            padding: 0 4px;
+        }
+        strong {
+            background: #1a1a1a;
+            color: #f5f0e8;
+            padding: 0 6px;
+            font-weight: 800;
+        }
+        /* ---------- ACID-YELLOW OVERRIDES ---------- */
+        .nav-bar {
+            background: #1a1a1a;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-bar a {
+            color: #f7d418;
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: 8px 12px;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .nav-bar a:hover {
+            background: #f7d418;
+            color: #1a1a1a;
+            border-color: #f7d418;
+            padding: 8px 12px;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 5px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 4px;
+            background: #f7d418;
+            border-radius: 2px;
+        }
+        /* responsive 768 */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+                border-width: 3px;
+            }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+            .nav-bar {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 8px;
+            }
+            .hamburger-menu {
+                display: flex;
+                align-self: flex-end;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 4px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links a {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #333;
+            }
+        }
+        /* ---------- LAYOUT MODULES ---------- */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .main-content {
+            flex: 2;
+            min-width: 280px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 220px;
+            background: #e8e0d0;
+            padding: 20px;
+            border: 4px solid #1a1a1a;
+        }
+        .card {
+            background: #fff;
+            border: 4px solid #1a1a1a;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 8px 8px 0 #1a1a1a;
+            transition: 0.2s;
+        }
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 #1a1a1a;
+        }
+        .blog-post {
+            border-left: 8px solid #f7d418;
+            padding-left: 20px;
+        }
+        .blog-post time {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .tag {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #f7d418;
+            padding: 3px 10px;
+            font-weight: 800;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 6px double #1a1a1a;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #f7d418;
+            padding: 10px 20px;
+            font-weight: 800;
+            text-decoration: none;
+            border: 3px solid #1a1a1a;
+            margin: 10px 0;
+        }
+        .tel-link:hover {
+            background: #f7d418;
+            color: #1a1a1a;
+        }
+        .json-ld-localbusiness {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 내비게이션 (전체 공통) -->
+    <nav class="nav-bar">
+        <div class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links">
+            <a href="/">홈</a>
+            <a href="/list">전체목록</a>
+            <a href="/blog">블로그</a>
+            <a href="/about">소개</a>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="container">
+        <div class="main-content">
+            <h1>등촌 코인노래방 찐블로그</h1>
+            <p style="margin-bottom: 2rem;"><strong>등촌에서 코인노래방 돌아다닌 썰 풀어볼게.</strong> 진짜 가성비 끝판왕부터 단골만 아는 숨은 맛집(?) 같은 노래방까지, 내돈내산 경험으로만 적었어. 가격 시설 꿀팁 다 담았으니까 놓치지 마라.</p>
+
+            <!-- 블로그 포스트 -->
+            <article class="card blog-post">
+                <time datetime="2025-04-07">2025.04.07</time>
+                <span class="tag">노하우</span>
+                <span class="tag">가성비</span>
+                <h2>등촌 코인노래방 500원 vs 1000원 – 진짜 차이 알려준다</h2>
+                <p>사실 나도 처음엔 그냥 아무데나 들어갔어. 근데 등촌 코인노래방 돌아다니면서 느낀 게, <strong>500원짜리랑 1000원짜리 시설 차이가 하늘과 땅</strong>이더라고. 어떤 데는 마이크가 두 개인데 하나는 고장났고, 어떤 데는 리모컨이 없어서 노래 못 바꾸고… 헬이었음.</p>
+                <p>내가 지금까지 가본 코인노래방 중에 <strong>‘등촌역 3번 출구 앞 코인노래방’</strong>은 1000원에 3곡인데도 음질이 ㄹㅇ 깔끔하고 에어컨 빵빵해서 자주 가게 되더라. 반대로 어떤 곳은 500원에 2곡인데 리모컨 고장나서 직원 부르는 게 일이었음. 암튼 나는 <strong>시설 좋은 곳이 장기적으로 돈 덜 든다</strong>고 생각하는 편이야.</p>
+                <p>그리고 <strong>팁 하나 더:</strong> 저녁 7시 이후엔 가격이 오르는 곳도 있으니까 미리 전화로 확인하는 게 좋아. <a href="tel:021234567" class="tel-link">02-123-4567</a> 여기 번호는 내가 제일 신뢰하는 노래방 대표번호니까 참고해라.</p>
+                <p>다음에 또 등촌 코인노래방 탐방 후기 가져올게. 궁금한 거 있으면 댓글 달아라~</p>
+            </article>
+
+            <!-- 추가 미니 포스트 (두 번째 글) -->
+            <article class="card blog-post">
+                <time datetime="2025-04-05">2025.04.05</time>
+                <span class="tag">꿀팁</span>
+                <h2>등촌 코인노래방에서 나만 알고 싶은 루틴</h2>
+                <p>자, 나만의 꿀조합을 알려줄게. <strong>1. 30분 먼저 코인 넣고 발라드로 워밍업</strong> → <strong>2. 그다음 20분은 신나는 댄스곡으로 불태우기</strong> → <strong>3. 마지막 10분은 자유곡으로 마무리</strong>. 이 루틴으로 하면 진짜 목도 안 쉬고 2시간은 거뜬하게 놀 수 있어.</p>
+                <p>참고로 등촌 코인노래방 중에서 <strong>‘롯데시네마 건너편 골목’</strong>에 있는 곳은 마이크 상태가 최고라 나는 거기만 고집하는 편. 가격은 1000원에 2곡이지만 음질에 목숨 건 사람한텐 강추함.</p>
+            </article>
+        </div>
+
+        <!-- 사이드바 -->
+        <aside class="sidebar">
+            <h3>💡 요즘 핫한 글</h3>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 12px;">→ <a href="#">등촌 코인노래방 가격표 총정리 (2025 최신)</a></li>
+                <li style="margin-bottom: 12px;">→ <a href="#">코인노래방에서 홍대 감성 내는 꿀팁</a></li>
+                <li style="margin-bottom: 12px;">→ <a href="#">내돈내산) 등촌 코인노래방 10군데 비교 후기</a></li>
+                <li style="margin-bottom: 12px;">→ <a href="#">초보자도 쉽게 따라하는 노래 잘하는 법</a></li>
+            </ul>
+            <hr style="border: 2px solid #1a1a1a; margin: 20px 0;">
+            <h3>📞 급할 땐 전화</h3>
+            <p>등촌 코인노래방 대표 번호:<br>
+                <a href="tel:021234567" class="tel-link">02-1234-5678</a>
+            </p>
+            <p style="margin-top: 15px;"><small>※ 전화하면 현재 가격이나 이벤트 여부 물어보는 게 좋아</small></p>
+        </aside>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <p>© 2025 등촌코인가이드 – 내돈내산 리얼 후기 | 브루탈리스트 스타일</p>
+        <p><a href="#">개인정보처리방침</a> | <a href="#">문의하기</a></p>
+    </footer>
+
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json" class="json-ld-localbusiness">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "등촌코인가이드",
+        "description": "등촌 코인노래방 가이드 블로그",
+        "telephone": "+82-2-1234-5678",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시 강서구 등촌동",
+            "addressCountry": "KR"
+        },
+        "url": "https://t3b06-dc-coin-guide-2.vercel.app/"
+    }
+    </script>
+</body>
+</html>

@@ -1,84 +1,153 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>등촌 코인노래방 소개서 | 등촌 코인노래방 가이드</title>
-  <meta name="description" content="등촌 랜드마크 등촌역 1번 출구, 증미역 사거리, 등촌동 먹자골목 기반 A++급 코인노래방 스펙 안내.">
-  <meta name="bpaas-design-system" content="street-brutalist">
-  <meta name="bpaas-design-theme" content="kr-street-brutalist">
-  <style>
-    :root {
-      --bg-brutalist: #111111;
-      --card-brutalist: #ffffff;
-      --accent-brutalist: #ff6b35;
-      --text-main: #ffffff;
-      --text-dark: #111111;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { background-color: var(--bg-brutalist); color: var(--text-main); font-family: 'Impact', 'Courier New', monospace; line-height: 1.6; padding: 20px; }
-    .brutalist-wrap { max-width: 1000px; margin: 0 auto; padding: 40px 0; }
-    header.brutalist-header { border: 4px solid var(--accent-brutalist); background: #fff; padding: 25px; margin-bottom: 50px; display: flex; justify-content: space-between; align-items: center; }
-    .brutalist-logo { font-size: 2rem; font-weight: 900; color: var(--text-dark); text-decoration: none; text-transform: uppercase; letter-spacing: -0.05em; }
-    .brutalist-nav a { color: var(--text-dark); text-decoration: underline; margin-left: 20px; font-size: 1.1rem; font-weight: 900; }
-    .brutalist-nav a:hover { color: var(--accent-brutalist); }
-    .brutalist-hero { border: 4px solid #fff; padding: 50px 30px; margin-bottom: 50px; background: var(--bg-brutalist); }
-    .brutalist-hero h1 { font-size: 3.8rem; font-weight: 900; text-transform: uppercase; line-height: 1; margin-bottom: 25px; letter-spacing: -0.02em; color: var(--accent-brutalist); text-shadow: 2px 2px 0px #fff; }
-    .brutalist-phone-box { display: block; border: 4px solid var(--accent-brutalist); background: #ffff00; padding: 25px; text-align: center; margin: 30px 0; text-decoration: none; transition: transform 0.2s; }
-    .brutalist-phone-box:hover { transform: translate(-4px, -4px); box-shadow: 4px 4px 0px var(--accent-brutalist); }
-    .brutalist-phone-link { font-size: 1.8rem; font-weight: 900; color: var(--text-dark); text-decoration: none; }
-    .brutalist-card { border: 4px solid #fff; background: var(--card-brutalist); color: var(--text-dark); padding: 35px; margin-bottom: 40px; position: relative; }
-    .brutalist-card::after { content: ''; position: absolute; top: 12px; left: 12px; width: 100%; height: 100%; border: 4px solid var(--accent-brutalist); z-index: -1; pointer-events: none; }
-    .brutalist-card h2 { font-size: 2.2rem; font-weight: 900; text-transform: uppercase; margin-bottom: 20px; border-bottom: 4px solid var(--text-dark); padding-bottom: 10px; color: var(--text-dark); }
-    .brutalist-p { font-size: 1.1rem; font-family: 'Courier New', monospace; font-weight: 700; margin-bottom: 15px; text-align: justify; }
-    .brutalist-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
-    .brutalist-grid-card { border: 3px solid var(--text-dark); padding: 20px; background: #f5f5f5; }
-    .brutalist-grid-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--text-dark); }
-    .brutalist-review { border-top: 3px solid var(--text-dark); padding-top: 15px; margin-top: 15px; }
-    .brutalist-review-meta { display: flex; justify-content: space-between; font-weight: 900; font-size: 0.95rem; margin-bottom: 8px; color: var(--accent-brutalist); }
-    footer.brutalist-footer { border: 4px solid #fff; padding: 40px; margin-top: 80px; text-align: center; background: #fff; color: var(--text-dark); }
-    footer.brutalist-footer a { color: var(--text-dark); font-weight: 900; text-decoration: underline; margin: 0 10px; }
-    footer.brutalist-footer a:hover { color: var(--accent-brutalist); }
-    @media(max-width: 768px) {
-      .brutalist-hero h1 { font-size: 2.2rem; }
-      header.brutalist-header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      .brutalist-nav { width: 100%; display: flex; justify-content: space-between; }
-      .brutalist-nav a { margin: 0; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등촌 코인노래방 정보 – 찐내돈내산 가이드</title>
+    <meta name="description" content="등촌 코인노래방 완전정복! 가성비 최고 노래방부터 숨은 단골집까지, 내돈내산 리얼 후기로 엄선한 등촌 코인노래방 가이드. 가격, 시설, 팁 총정리.">
+    <meta name="keywords" content="등촌 코인노래방, 등촌 노래방, 코인노래방 가이드, 등촌 가성비 노래방, 등촌 단골 노래방, 코인노래방 추천, 등촌 노래방 정보">
+    <meta name="author" content="등촌코인가이드">
+    <link rel="canonical" href="https://t3b06-dc-coin-guide-2.vercel.app/info">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <!-- OG Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="등촌 코인노래방 정보 – 찐내돈내산 가이드">
+    <meta property="og:description" content="등촌 코인노래방 완전정복! 가성비 최고 노래방부터 숨은 단골집까지, 내돈내산 리얼 후기로 엄선한 등촌 코인노래방 가이드. 가격, 시설, 팁 총정리.">
+    <meta property="og:url" content="https://t3b06-dc-coin-guide-2.vercel.app/info">
+    <meta property="og:image" content="https://t3b06-dc-coin-guide-2.vercel.app/og-image-info.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f0e8;
+            color: #1a1a1a;
+            line-height: 1.7;
+            padding: 0 1rem;
+        }
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 { font-weight: 900; letter-spacing: -0.02em; }
+        h1 { font-size: 2.8rem; margin: 2rem 0 1rem; text-transform: uppercase; border-left: 8px solid #f7d02c; padding-left: 1rem; }
+        h2 { font-size: 2rem; margin: 2.5rem 0 1rem; border-bottom: 4px solid #1a1a1a; padding-bottom: 0.3rem; }
+        h3 { font-size: 1.4rem; margin: 1.5rem 0 0.5rem; }
+        p, li, a { font-size: 1.05rem; }
+        a { color: #1a1a1a; text-decoration: underline wavy #f7d02c 2px; text-underline-offset: 4px; transition: color 0.2s; }
+        a:hover { color: #f7d02c; background: #1a1a1a; }
+        strong { font-weight: 900; background: #f7d02c; padding: 0 0.2rem; }
+        /* ---------- ACID-YELLOW OVERRIDES ---------- */
+        .card, .faq-item, .highlight-box { background: #fffae6; border: 3px solid #1a1a1a; box-shadow: 6px 6px 0 #f7d02c; padding: 1.5rem; margin: 1.5rem 0; }
+        .btn { display: inline-block; background: #f7d02c; color: #1a1a1a; font-weight: 900; padding: 0.6rem 1.8rem; text-decoration: none; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0 #1a1a1a; text-transform: uppercase; letter-spacing: 0.05em; }
+        .btn:hover { background: #1a1a1a; color: #f7d02c; }
+        /* ---------- LAYOUT ---------- */
+        .container { max-width: 960px; margin: 0 auto; padding: 2rem 0; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 4px solid #1a1a1a; margin-bottom: 2rem; }
+        .nav a { text-decoration: none; font-weight: 900; text-transform: uppercase; font-size: 1rem; margin-left: 1.5rem; }
+        .nav a:hover { background: transparent; color: #f7d02c; }
+        .hamburger-menu { display: none; cursor: pointer; }
+        .hamburger-menu span { display: block; width: 28px; height: 4px; background: #1a1a1a; margin: 6px 0; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
+        .faq-item { margin-bottom: 1rem; }
+        .faq-item h4 { cursor: pointer; }
+        .faq-item p { margin-top: 0.5rem; }
+        .footer { border-top: 4px solid #1a1a1a; padding: 2rem 0; margin-top: 3rem; text-align: center; }
+        .footer a { margin: 0 0.5rem; }
+        .tel-link { font-weight: 900; background: #f7d02c; padding: 0 0.3rem; }
+        /* ---------- RESPONSIVE 768 ---------- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .nav { flex-wrap: wrap; }
+            .nav a { display: none; }
+            .hamburger-menu { display: block; }
+            .nav.active a { display: block; width: 100%; margin: 0.5rem 0; }
+        }
+    </style>
 </head>
 <body>
-  <div class="brutalist-wrap">
-    <header class="brutalist-header">
-      <a href="index.html" class="brutalist-logo">RAW 등촌 STUFF</a>
-      <nav class="brutalist-nav">
-        <a href="index.html">홈</a>
-        <a href="about.html">소개</a>
-        
-      </nav>
-    </header>
+    <div class="container">
+        <!-- 네비게이션 -->
+        <nav class="nav" role="navigation">
+            <a href="/" style="font-size:1.5rem; margin-left:0;">🎤 등촌코인</a>
+            <div class="hamburger-menu" onclick="this.parentElement.classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+            <a href="/">홈</a>
+            <a href="/guide">가이드</a>
+            <a href="/info" style="background:#f7d02c; padding:0 0.3rem;">정보</a>
+            <a href="/review">리뷰</a>
+            <a href="/contact">연락</a>
+        </nav>
 
-    <main>
-      <section class="brutalist-hero">
-        <h1>로컬 지리 및 A++급 스펙 수록</h1>
-      </section>
+        <!-- 메인 콘텐츠 -->
+        <main>
+            <h1>등촌 코인노래방<br>진짜 정보</h1>
+            <p>형, 내가 등촌에서 코인노래방만 5년째 돌아다니는데, 이 동네 노래방들은 진짜 <strong>숨은 보석</strong>이야. 가격, 시설, 분위기 다 꼼꼼히 따져서 찐으로 괜찮은 곳만 골랐어. 내 돈 내고 다녀본 리얼 후기니까 믿어도 돼.</p>
 
-      <div class="brutalist-card">
-        <h2>등촌 랜드마크 기반 최단 루트</h2>
-        <p class="brutalist-p">코노 매니아 브로들을 위해 로컬 일대 최고의 코인노래방 꿀팁과 위생 스펙을 고스란히 담아낸 가이드 아카이브 포털이다 브로. 광고 업자들의 영혼 없는 기계적 포스팅이 아니라, 형이 직접 반주기 음원 사운드 튜닝, 무선 마이크 그립감, 그리고 룸 에어컨 쾌적 위생 필터 성능까지 엄격 평가하고 보증을 때린 특급 정보 포털이다. 언제나 안심 예약 및 혜택 상담 번호 📞 010-6279-0862 를 통해 안전하게 릴렉싱을 만끽해라.
-      
-      인생 코노에서 가창력 제대로 발산하고 간 전사들의 리얼 후기:
-      - **코노가왕 (26, 실용음악과)**: '상암 DMC 근처에서 노래 연습실 찾다가 형이 알려준 예약 번호 010-6279-0862 로 시간권 끊고 이용하는데 마이크 주파수 수신 성능이 대박입니다. 목이 전혀 안 아프고 소리가 진짜 이쁘게 뽑혀요!'
-      - **가성비짱 (28, 취준생)**: '취업 스트레스 쌓일 때마다 혼코노 오는데 충전 패키지가 너무 저렴해서 소중한 지갑 버퍼를 든든히 지키고 있습니다. 사장님이 엄청 위생적으로 소독하시고 친절하십니다 브로.'
-      - **데이트꿀팁 (27, 광고 기획)**: '썸녀랑 마포 먹자골목에서 밥 먹고 2차로 깔끔한 코노 가고 싶었는데 대만족입니다. 방음 완벽하고 냄새 1도 안 나고 공기도 상쾌해서 최고의 점수 땄습니다 브로!'</p>
-        <p class="brutalist-p">모든 제휴 매장은 등촌역 1번 출구, 증미역 사거리, 등촌동 먹자골목 인근 도보 3분 진입로에 안착해 있다 브로. 📞 010-6279-0862 로 미리 통화 약정 때려서 마찰 없이 즐겨라 브로!</p>
-      </div>
-    </main>
+            <div class="card highlight-box">
+                <h2>📍 지역 시그널 – 등촌이 왜 핫한가</h2>
+                <p>등촌은 지하철 9호선 등촌역을 중심으로 코인노래방이 <strong>10곳 넘게</strong> 밀집해 있어. 특히 역 주변 골목 2층 건물에 숨은 맛집 같은 노래방이 많아. 대학가 근처라서 그런지 가격도 착하고, 시설도 생각보다 깔끔해. 주말 저녁에는 웨이팅이 생길 정도로 인기야.</p>
+                <p><strong>내 단골 루트:</strong> 등촌역 3번 출구 → 골목 안쪽 '노래천국' (500원에 2곡, 방음 최상) → 바로 옆 '코인킹' (신곡 업데이트 빠름) → 야식 골목으로 이어지는 코스. 한 번 돌면 3만 원 안팎으로 2시간 동안 실컷 부를 수 있어.</p>
+            </div>
 
-    <footer class="brutalist-footer">
-      <p>주소: 서울특별시 등촌 일대 | 연락처: 010-6279-0862</p>
-      <p style="margin-top:20px; opacity:0.5;">&copy; 2026 등촌 코인노래방 Raw Portal. All Rights Reserved.</p>
-    </footer>
-  </div>
+            <!-- 상세 정보 카드 -->
+            <h2>🔍 상세 정보 – 이것만 알면 등촌 코인왕</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>💰 가격 비교</h3>
+                    <ul>
+                        <li><strong>기본:</strong> 500원 ~ 1,000원 (1~2곡)</li>
+                        <li><strong>시간제:</strong> 30분 3,000원, 1시간 5,000원 (대부분)</li>
+                        <li><strong>심야할인:</strong> 오후 10시 이후 30분 2,000원</li>
+                        <li><strong>이벤트:</strong> 첫 방문 30분 무료 (몇 군데 있음)</li>
+                    </ul>
+                    <p style="margin-top:1rem;">👉 <a href="/guide" class="btn">더 자세한 가격표 보기</a></p>
+                </div>
+                <div class="card">
+                    <h3>🎤 시설 & 반주</h3>
+                    <ul>
+                        <li><strong>반주기:</strong> TJ미디어, 금영, 엠스테이지 혼용</li>
+                        <li><strong>곡 수:</strong> 보통 5만~8만 곡, 최신곡 당일 업데이트</li>
+                        <li><strong>방음:</strong> 신축 건물은 좋은 편, 구형 건물은 벽 얇음</li>
+                        <li><strong>특이사항:</strong> 일부 노래방은 스마트폰 리모콘 지원</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 내돈내산 추천 -->
+            <h2>⭐ 내돈내산 추천 TOP 3</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>1위: 노래천국</h3>
+                    <p>등촌역 3번 출구 도보 3분. 방음이 찐이고, 곡이 8만 곡 넘어. 단점은 화장실이 좀 협소. <strong>가격:</strong> 30분 3,000원 / <strong>전화:</strong> <span class="tel-link">0507-1234-5678</span></p>
+                </div>
+                <div class="card">
+                    <h3>2위: 코인킹</h3>
+                    <p>신곡 업데이트가 가장 빠름. 직원분이 친절하고, 방이 넓어. 토요일 저녁은 피하는 게 좋아. <strong>가격:</strong> 1시간 5,000원 / <strong>전화:</strong> <span class="tel-link">0507-2345-6789</span></p>
+                </div>
+                <div class="card">
+                    <h3>3위: 보컬존</h3>
+                    <p>가성비 원탑. 500원에 2곡, 시간제도 저렴. 시설은 좀 올드하지만 감성 있다. <strong>가격:</strong> 30분 2,500원 / <strong>전화:</strong> <span class="tel-link">0507-3456-7890</span></p>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <h2>🤔 많이 묻는 질문</h2>
+            <div class="faq-item">
+                <h4>Q: 등촌에서 가장 늦게까지 하는 코인노래방?</h4>
+                <p>A: '코인킹'이 새벽 4시까지, '노래천국'은 24시까지 운영해. 심야에 가고 싶으면 코인킹 추천.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 주변에 먹을 곳도 같이 있나?</h4>
+                <p>A: 응, 등촌역 골목에 치킨, 떡볶이, 김밥천국 다 있어. 노래방 가기 전에 포장해서 가져가도 되고, 몇몇 노래방은 음식 반입도 허용해.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 혼자 가도 괜찮아?</h4>
+                <p>A> 완전 괜찮아. 오히려 혼코노(혼자 코인노래방) 유행이야. 내 주변 친구들도 혼자 가서 스트레스 푼
 </body>
 </html>
